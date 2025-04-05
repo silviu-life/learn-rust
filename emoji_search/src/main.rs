@@ -1,11 +1,10 @@
-use emoji::{picker::EmojiPicker, picker::Query};
+use ui::app::App;
 
 mod emoji;
+mod ui;
 
 fn main() {
-    for emoji in EmojiPicker::search(&Query::ExactTag { tag: "happy".to_string() }){
-        print!("{}", emoji.emoji);
-        dbg!(emoji);
-    }
-    println!()
+    let app = App::new();
+    app.run();
+    app.close();
 }
