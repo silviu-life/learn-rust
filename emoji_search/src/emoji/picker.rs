@@ -37,7 +37,7 @@ impl EmojiPicker {
     }
 }
 
-/// Does an exact tag search.
+/// Searches an exact tag search.
 fn search_exact_tag(tag: &String) -> Vec<&Emoji> {
     EMOJIS
         .iter()
@@ -45,7 +45,7 @@ fn search_exact_tag(tag: &String) -> Vec<&Emoji> {
         .collect()
 }
 
-/// Does an exact alias search.
+/// Searches an exact alias search.
 fn search_exact_alias(alias: &String) -> Vec<&Emoji> {
     EMOJIS
         .iter()
@@ -53,7 +53,7 @@ fn search_exact_alias(alias: &String) -> Vec<&Emoji> {
         .collect()
 }
 
-/// Does an alias via fuzzy search.
+/// Searches an alias via fuzzy search.
 fn search_fuzzy_alias(alias: &String) -> Vec<&Emoji> {
     use rust_fuzzy_search::fuzzy_search_threshold;
     let threshold : f32 = 0.4f32;
