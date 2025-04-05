@@ -58,7 +58,6 @@ impl SkinTone {
     }
 }
 
-/// Emoji representation
 #[cfg(test)]
 mod tests {
     use super::*;

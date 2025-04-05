@@ -6,6 +6,7 @@ version = 4
 name = "emoji_search"
 version = "0.1.0"
 dependencies = [
+ "rust-fuzzy-search",
  "serde",
  "serde_json",
 ]
@@ -39,6 +40,12 @@ checksum = "1885c039570dc00dcb4ff087a89e185fd56bae234ddc7f056a945bf36467248d"
 dependencies = [
  "proc-macro2",
 ]
+
+[[package]]
+name = "rust-fuzzy-search"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a157657054ffe556d8858504af8a672a054a6e0bd9e8ee531059100c0fa11bb2"
 
 [[package]]
 name = "ryu"
