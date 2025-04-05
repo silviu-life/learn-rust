@@ -1,6 +1,4 @@
-use std::{collections::HashSet, str::Matches};
-
-use crate::emoji;
+use std::collections::HashSet;
 
 use super::emoji::{EMOJIS, Emoji};
 
